@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/index.scss"],"names":[],"mappings":"AAEA;EACE,aAAa,EAAA;;AAGf;EACE,kBAAkB;EAClB,YAAY;EACZ,aAAa,EAAA","file":"index.css","sourcesContent":["\n\n.banner{\n  height: 320px;\n}\n\n.choice_card{\n  border-radius: 8px;\n  width: 255px;\n  height: 175px;\n}"]}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["base/custom.scss"],"names":[],"mappings":"AAAA;EACE,kCAAkC;EAClC,sBAAsB,EAAA","file":"custom.css","sourcesContent":[".bg-cover {\n  background-position: center center;\n  background-size: cover;\n}"]}

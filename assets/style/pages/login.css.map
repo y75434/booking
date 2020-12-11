@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/login.scss"],"names":[],"mappings":"AAAA;EACE,4CAA+C,EAAA","file":"login.css","sourcesContent":[".pic{\n  background-image: url(\"..\\..\\images\\login.jpg\");\n  \n}"]}

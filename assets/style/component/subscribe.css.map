@@ -1,0 +1,1 @@
+{"version":3,"sources":["component/subscribe.scss"],"names":[],"mappings":"AACA;EACE,aAAa,EAAA;;AAGf;EACE,eAAe,EAAA","file":"subscribe.css","sourcesContent":["\n.bg-secondary{\n  padding: 92px;\n}\n\n.fz-6{\n  font-size: 48px;\n}"]}
