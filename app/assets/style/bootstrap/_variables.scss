@@ -68,10 +68,19 @@ $primary:       #6C51E2 !default;
 $secondary:     #F1F0F8 !default;
 $success:       #00000061 !default;
 $info:          #00000099 !default;
-$warning:       $yellow !default;
+$warning:       #121212 !default;
 $danger:        $red !default;
 $light:         #FFFFFF !default;
 $dark:          #000000 !default;
+
+// $primary:       $blue !default;
+// $secondary:     $gray-600 !default;
+// $success:       $green !default;
+// $info:          $cyan !default;
+// $warning:       $yellow !default;
+// $danger:        $red !default;
+// $light:         $gray-100 !default;
+// $dark:          $gray-800 !default;
 
 $theme-colors: () !default;
 $theme-colors: map-merge(

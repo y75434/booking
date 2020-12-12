@@ -3,4 +3,43 @@ title: 登入頁
 layout: ./app/layout.ejs
 engine: ejs
 current: login
+subscribe: false
 ---
+
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 pic bg-cover ">
+        <a class="navbar-brand d-block " href="index.html"><img src="img/ic-logo-aloha.svg" alt=""></a>
+        <h1>An ideal hotel makes a wonderful Trip.</h1>
+        <p class="fz-14">Discover your dream destination and hotel on ALOHA.com</p>
+        <button type="button" class="btn btn-warning border">
+          <span class="material-icons">location_on</span>
+          Osaka Castel, Japan
+        </button>
+      </div>
+      <div class="col-lg-4">
+        <h2>Login</h2>
+        <form>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input class="form-control" type="text" id="account">
+          </div>
+          <div class="form-group">
+            <label for="passwords">Passwords</label>
+            <input class="form-control" type="text" id="account">
+          </div>
+          <p class="fz-12 text-gray">By signing in or creating an account, you agree with our <a class="fz-12 text-primary">Terms & Conditions</a> and <a class="fz-12 text-primary">Privacy Statement</a> </p>
+          <div class="form-gruop mt-4 mb-4">
+            <input type="checkbox" id="exampleCheck1">
+            <label for="exampleCheck1">Remember me</label>
+          </div>
+          <a href="#" class="btn btn-primary col-12">Login</a>
+          <p class="fz-14">Don’t have an account yet? <a class="font-weight-bold text-primary text-center">Sign up</a></p>
+        </form>
+        
+      </div>
+    </div>
+  </div>
+</section>
