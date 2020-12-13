@@ -1,1 +1,1 @@
-{"version":3,"sources":["base/custom.scss"],"names":[],"mappings":"AAAA;EACE,kCAAkC;EAClC,sBAAsB,EAAA","file":"custom.css","sourcesContent":[".bg-cover {\n  background-position: center center;\n  background-size: cover;\n}"]}
+{"version":3,"sources":["base/custom.scss"],"names":[],"mappings":"AAAA;EACE,kCAAkC;EAClC,sBAAsB,EAAA;;AAGxB;EACE,eAAe,EAAA","file":"custom.css","sourcesContent":[".bg-cover {\n  background-position: center center;\n  background-size: cover;\n}\n\n.fz-14{\n  font-size: 14px;\n}"]}
