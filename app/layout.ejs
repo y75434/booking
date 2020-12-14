@@ -13,13 +13,13 @@
 <body>
   
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid justify-space-between align-items-center">
+    <div class="container-fluid justify-content-between align-items-center">
       <a href="index.html"><img src="\assets\images\logo-aloha.svg" ></a>
-      <ul class="d-flex list-unstyled">
+      <ul class="d-flex list-unstyled align-items-center">
         <li>
           <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
             <div class="btn-group mr-5" role="group">
-              <button id="btnGroupDrop1" type="button" class="btn btn-light border dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <button id="btnGroupDrop1" type="button" class="btn btn-light border dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                 <span class="material-icons">
                   language
                 </span>
@@ -46,7 +46,7 @@
   <% if (subscribe) { %> <%- include('subscribe.ejs'); %> <% } %>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid justify-space-between">
+    <div class="container-fluid justify-content-between">
       <ul class="d-flex list-unstyled ">
         <li><p>© 2020 ALOHA, Inc. All rights reserved.</p></li>
        <li><a href="#" class="mr-5">FAQs</a></li>

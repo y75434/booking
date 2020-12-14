@@ -1,31 +1,28 @@
-.range{
-	position: relative;
-  display: flex;
-}
-
-.range::after {
-	content:"";
-	position: absolute;
-	left: 100px;    
-	right: 90px;
-	height: 3px; 
-	background-color: $primary;
-  width: 278px;
-}
-
 .line{
+	width: 302px;
+	height: 16px;
+	border-bottom: 3px solid $primary;
 	position: relative;
-  display: flex;
-  justify-content: center;
 }
 
-.line::before {
-	content: "";
-	position: absolute;
-	left: 40%;
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	transform: translate(50%,-25%);
+.circle{
+	width: 16px;
+	height: 16px;
 	background-color: $primary;
+	border-radius: 50%;
+	position: absolute;
+	top: 5px;
+}
+
+.circle2{
+	right: 0;
+}
+
+.pic{
+	width: 255px;
+	height: 175px;
+}
+
+.hotel{
+	height: 175px;
 }

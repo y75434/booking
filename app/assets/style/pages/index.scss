@@ -5,8 +5,24 @@
   width: 100%;
 }
 
+.top_card{
+  height: 175px;
+  width: 255px;
+}
+
 .choice_card{
   border-radius: 8px;
   width: 255px;
   height: 175px;
+}
+
+.pop_card{
+  width: 350px;
+  height: 78px;
+  position: relative;
+}
+
+.get_card{
+  width: 350px;
+  height: 263px;
 }
