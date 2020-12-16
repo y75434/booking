@@ -25,8 +25,8 @@
                 </span>
               </button>
               <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                <li ><a class="dropdown-item" href="#">Dropdown link</a></li>
-                <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                <li ><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">繁體中文</a></li>
               </ul>
             </div>
           </div>
@@ -46,7 +46,7 @@
   <% if (subscribe) { %> <%- include('subscribe.ejs'); %> <% } %>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid justify-content-between">
+    <div class="container-fluid justify-content-between align-items-center">
       <ul class="d-flex list-unstyled ">
         <li><p>© 2020 ALOHA, Inc. All rights reserved.</p></li>
        <li><a href="#" class="mr-5">FAQs</a></li>
@@ -72,7 +72,7 @@
       <li>
         <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
           <div class="btn-group mr-5" role="group">
-            <button id="btnGroupDrop1" type="button" class="btn btn-light border dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <button id="btnGroupDrop1" type="button" class="btn btn-light border dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
               <span class="material-icons align-item-center">attach_money</span>TWD
             </button>
             <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
