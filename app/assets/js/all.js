@@ -1,4 +1,4 @@
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.topChoices .swiper-container', {
   slidesPerView: 4,
   spaceBetween: 30,
   loop: true,
@@ -22,3 +22,4 @@ var swiper = new Swiper('.swiper-container', {
     },
   }
 });
+

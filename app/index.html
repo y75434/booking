@@ -6,27 +6,25 @@ current: index
 subscribe: true
 ---
 <!-- carousel -->
-  <section>
+  <section class="container-fluid ">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner ">
-            <div class="carousel-item active">
-                <div class="bg-cover w-100 d-block bg-item4 d-flex justify-content-center align-items-center" style="height: 320px;">
-                  <img src=".\assets\images\index-banner.jpg" class="d-block w-100">  
-                  <h1 class="text-white d-md-block d-none">Discover your ideal hotel</h1>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="bg-cover w-100 d-block bg-item5 d-flex justify-content-center align-items-center" style="height: 320px;">
-                  <img src=".\assets\images\top1.jpg" class="d-block w-100">
-                  <h2 class="text-white d-md-block d-none h1">Discover your ideal hotel</h2>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="bg-cover w-100 d-block bg-item6 d-flex justify-content-center align-items-center" style="height: 320px;">
-                  <img src=".\assets\images\top2.jpg" class="d-block w-100">
-                  <h2 class="text-white d-md-block d-none h1">Discover your ideal hotel</h2>
-                </div>
-            </div>
+          <h1 class="text-white d-md-block d-none  position-absolute " style="z-index:2; transform: translate(80%, 300%);">Discover your ideal hotel</h1>
+          <div class="carousel-item active ">
+              <div class="bg-cover w-100 position-relative  d-block justify-content-center align-items-center" style="height: 320px;">
+                <img src=".\assets\images\index-banner.jpg" class="d-block w-100"> 
+              </div>
+          </div>
+          <div class="carousel-item">
+              <div class="bg-cover w-100 d-block d-flex justify-content-center align-items-center" style="height: 320px;">
+                <img src=".\assets\images\top1.jpg" class="d-block w-100">
+              </div>
+          </div>
+          <div class="carousel-item">
+              <div class="bg-cover w-100 d-block d-flex justify-content-center align-items-center" style="height: 320px;">
+                <img src=".\assets\images\top2.jpg" class="d-block w-100">
+              </div>
+          </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -39,17 +37,20 @@ subscribe: true
     </div>
     <!-- Discover your ideal hotel collapse end -->
   </section>
+
+
+  
   
 
 <!-- search -->
-  <section>
-      <div class=" col-lg-10 d-flex bg-secondary justify-content-between align-items-center p-5 rounded">
-        <div class="dropdown mr-lg-2">
+  <section class="search ">
+      <div class=" col-lg-10 col-md-12 d-flex bg-secondary justify-content-between align-items-center p-5 rounded">
+        <div class="dropdown mr-lg-2 ">
           <button class="btn btn-light dropdown-toggle d-flex " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
             <span class="material-icons">location_on</span><span>Destination</span>
           </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <li>
+          <ul class="dropdown-menu flex-column flex-lg-row " aria-labelledby="dropdownMenuButton">
+            <li class="">
               <a class="dropdown-item" href="#">
                 <div class="row">
                   <div class="col-2">
@@ -167,143 +168,160 @@ subscribe: true
   </section>
 
   <!-- Top Choices -->
-  <nav>
-    <h2>Top Choices</h2>
-    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-      <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Bali<sup>128</sup></a>
-      <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Okinawa<sup>67</sup></a>
-      <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Taipei<sup>53</sup></a>
-    </div>
-  </nav>
-  <div class="tab-content" id="nav-tabContent">
-    <div class="tab-pane fade show active d-flex" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-      <!-- Swiper -->
-      <div class="swiper-container">
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-wrapper d-flex">
-          <div class="swiper-slide ">
-            <div class="card border-0">
-              <img src=".\assets\images\top1.jpg" class="card-img-top top_card rounded">
-              <div class="card-body">
-                <h5 class="card-title">Hotel Aqua</h5>
-                <i class="material-icons">star</i>
-                <i class="material-icons">star</i>
-                <i class="material-icons">star</i>
-                <i class="material-icons">star</i>
-                <i class="material-icons">star</i>
-                <small>5.0</small><small>・2k reviews</small>
-                <p class="card-text">TWD 2,480<small><del>TWD 3,980</del></small></p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card border-0">
-              <img src=".\assets\images\top2.jpg" class="card-img-top top_card rounded">
-              <div class="card-body">
-                <h5 class="card-title">Mr. Kawasaki Inn</h5>
-                <i class="material-icons">star</i>
-                <i class="material-icons">star</i>
-                <i class="material-icons">star</i>
-                <i class="material-icons">star</i>
-                <small>4.0</small><small>・500 reviews</small>
-                <p class="card-text">TWD 3,380</p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card border-0">
-              <img src=".\assets\images\top3.jpg" class="card-img-top top_card rounded">
-              <div class="card-body">
-                <h5 class="card-title">Hotel Aqua</h5>
-                <i class="material-icons">star</i>
-                <i class="material-icons">star</i>
-                <i class="material-icons">star</i>
-                <i class="material-icons">star</i>
-                <i class="material-icons">star</i>
-                <p class="card-text">TWD 2,480</p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card border-0">
-              <img src=".\assets\images\top4.jpg" class="card-img-top top_card rounded">
-              <div class="card-body">
-                <h5 class="card-title">Weekly Paradise</h5>
-                <i class="material-icons">star</i>
-                <i class="material-icons">star</i>
-                <i class="material-icons">star</i>
-                <i class="material-icons">star</i>
-                <small>4.0</small><small>・470 reviews</small>
-                <p class="card-text">TWD 4,780</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-button-next"></div>
+  <section class="topChoices mb-5">
+    <nav>
+      <h2>Top Choices</h2>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Bali<sup>128</sup></a>
+        <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Okinawa<sup>67</sup></a>
+        <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Taipei<sup>53</sup></a>
       </div>
-      <!-- Swiper -->
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active d-flex" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+        <!-- Swiper -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper d-flex">
+            <div class="swiper-slide ">
+              <div class="card border-0">
+                <img src=".\assets\images\top1.jpg" class="card-img-top top_card rounded">
+                <div class="card-body">
+                  <h5 class="card-title">Hotel Aqua</h5>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <small>5.0</small><small>・2k reviews</small>
+                  <p class="card-text">TWD 2,480<small><del>TWD 3,980</del></small></p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-0">
+                <img src=".\assets\images\top2.jpg" class="card-img-top top_card rounded">
+                <div class="card-body">
+                  <h5 class="card-title">Mr. Kawasaki Inn</h5>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <small>4.0</small><small>・500 reviews</small>
+                  <p class="card-text">TWD 3,380</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-0">
+                <img src=".\assets\images\top3.jpg" class="card-img-top top_card rounded">
+                <div class="card-body">
+                  <h5 class="card-title">Hotel Aqua</h5>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <p class="card-text">TWD 2,480</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-0">
+                <img src=".\assets\images\top4.jpg" class="card-img-top top_card rounded">
+                <div class="card-body">
+                  <h5 class="card-title">Weekly Paradise</h5>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <small>4.0</small><small>・470 reviews</small>
+                  <p class="card-text">TWD 4,780</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-0">
+                <img src=".\assets\images\top1.jpg" class="card-img-top top_card rounded">
+                <div class="card-body">
+                  <h5 class="card-title">Weekly Paradise</h5>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <i class="material-icons">star</i>
+                  <small>4.0</small><small>・470 reviews</small>
+                  <p class="card-text">TWD 4,780</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev rounded-circle topChoicesBtn btn-secondary"></div>
+          <div class="swiper-button-next rounded-circle btn-secondary topChoicesBtn"></div>
+        </div>
+        <!-- Swiper -->
+      </div>
+        <div class="tab-pane fade " id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"></div>
+        <div class="tab-pane fade " id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"></div>
     </div>
-      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Okinawa</div>
-      <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Taipei</div>
-  </div>
+  </section>
+  
 
 
   
   <!-- Popular Destinations -->
-  <section>
+  <section class="mb-5">
     <h2>Popular Destinations</h2>
     <div class="container">
       <div class="row">
-        <div class="col-sm-4 col-md-6">
+        <div class="col-sm-6 col-md-4 mb-3">
           <div class="text-white">
             <img src=".\assets\images\Osaka.jpg" class="card-img pop_card bg-cover">
             <div class="card-img-overlay">
-              <p class="card-text">JAPAN</p>
+              <p class="card-text mb-0">JAPAN</p>
               <h5 class="card-title">Osaka</h5>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-sm-6 col-md-4 ">
           <div class="text-white">
             <img src=".\assets\images\Kyoto.jpg" class="pop_card bg-cover">
             <div class="card-img-overlay">
-              <p class="card-text">JAPAN</p>
+              <p class="card-text mb-0">JAPAN</p>
               <h5 class="card-title">Kyoto</h5>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-sm-6 col-md-4 ">
           <div class="text-white">
             <img src=".\assets\images\Reykjavic.jpg" class="pop_card bg-cover">
             <div class="card-img-overlay">
-              <p class="card-text">iceland</p>
+              <p class="card-text mb-0">Iceland</p>
               <h5 class="card-title">Reykjavík</h5>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-sm-6 col-md-4 ">
           <div class="text-white">
             <img src=".\assets\images\Paris.jpg" class="pop_card bg-cover">
             <div class="card-img-overlay">
-              <p class="card-text">France</p>
+              <p class="card-text mb-0">France</p>
               <h5 class="card-title">Paris</h5>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-sm-6 col-md-4 ">
           <div class="text-white">
             <img src=".\assets\images\Roman.jpg" class="pop_card bg-cover">
             <div class="card-img-overlay">
-              <p class="card-text">Italy</p>
+              <p class="card-text mb-0">Italy</p>
               <h5 class="card-title">Roma</h5>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-sm-6 col-md-4 ">
           <div class="text-white">
             <img src=".\assets\images\Bangkok.jpg" class="pop_card bg-cover">
             <div class="card-img-overlay">
-                <p class="card-text">Thailand</p>
+                <p class="card-text mb-0">Thailand</p>
                 <h5 class="card-title">Bangkok</h5>
               </div>
                 <span class="material-icons text-white">keyboard_arrow_down</span>
@@ -319,38 +337,33 @@ subscribe: true
 
   <!-- Get Inspiration -->
   <section>
-    <div class="d-flex justify-content-between">
-      <h2>Get Inspiration</h2>
-      <button type="button" class="btn btn-light border-primary justify-content-end">see more</button>
-    </div>
-    
+
     <div class="container">
-      <ul class="row align-items-center list-unstyled">
-        <li class="col-4">
-          <div class="card border-0 ">
-            <img src=".\assets\images\italy.jpg" class="card-img-top get_card rounded">
-            <div class="card-body">
-              <h4 class="card-title">The fifth most visited country</h4>
-              <p class="card-text">Italy is the fifth most visited country in the world, with a total of 52.3 million…</p>
-            </div>
+      <div class="row justify-content-between mb-5">
+        <h2>Get Inspiration</h2>
+        <button type="button" class="btn btn-light border-primary justify-content-end">see more</button>
+      </div>
+    
+      <ul class="row list-unstyled">
+        <li class="col-4 card border-0 ">
+          <img src=".\assets\images\italy.jpg" class="card-img-top get_card rounded">
+          <div class="card-body">
+            <h4 class="card-title">The fifth most visited country</h4>
+            <p class="card-text">Italy is the fifth most visited country in the world, with a total of 52.3 million…</p>
           </div>
         </li>
-        <li class="col-4">
-          <div class="card border-0">
-            <img src=".\assets\images\Thailand.jpg" class="card-img-top get_card rounded" >
-            <div class="card-body">
-              <h4 class="card-title">Visit Thailand for Bangkok</h4>
-              <p class="card-text">Asian tourists primarily visit Thailand for Bangkok and the historical, natural, and…</p>
-            </div>
+        <li class="col-4 card border-0">
+          <img src=".\assets\images\Thailand.jpg" class="card-img-top get_card rounded" >
+          <div class="card-body">
+            <h4 class="card-title">Visit Thailand for Bangkok</h4>
+            <p class="card-text">Asian tourists primarily visit Thailand for Bangkok and the historical, natural, and…</p>
           </div>
         </li>
-        <li class="col-4">
-          <div class="card border-0">
-            <img src=".\assets\images\NewZealand.jpg" class="card-img-top get_card rounded">
-            <div class="card-body">
-              <h4 class="card-title">Lord of the Rings Tour</h4>
-              <p class="card-text">The national cuisine has been described as Pacific Rim, incorporating the native Māori…</p>
-            </div>
+        <li class="col-4 card border-0">
+          <img src=".\assets\images\NewZealand.jpg" class="card-img-top get_card rounded">
+          <div class="card-body">
+            <h4 class="card-title">Lord of the Rings Tour</h4>
+            <p class="card-text">The national cuisine has been described as Pacific Rim, incorporating the native Māori…</p>
           </div>
         </li>
       </ul>
