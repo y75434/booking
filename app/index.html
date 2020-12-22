@@ -43,11 +43,11 @@ subscribe: true
   
 
 <!-- search -->
-  <section class="search ">
-      <div class=" col-lg-10 col-md-12 d-flex bg-secondary justify-content-between align-items-center p-5 rounded">
-        <div class="dropdown mr-lg-2 ">
-          <button class="btn btn-light dropdown-toggle d-flex " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-            <span class="material-icons">location_on</span><span>Destination</span>
+  <section class=" col-lg-10 col-md-10  m-0">
+      <ul class="search d-flex bg-secondary justify-content-between align-items-center p-5 rounded list-unstyled">
+        <li class="dropdown mr-lg-2 w-100 mb-4 ">
+          <button class="btn btn-light dropdown-toggle d-flex btn-block p-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+            <span class="material-icons">location_on</span><span class="text-muted">Destination</span>
           </button>
           <ul class="dropdown-menu flex-column flex-lg-row " aria-labelledby="dropdownMenuButton">
             <li class="">
@@ -111,18 +111,18 @@ subscribe: true
               </a>
             </li>
           </ul>
-        </div>
-        <div class="dropdown mr-lg-2">
-          <button class="btn btn-secondary dropdown-toggle bg-light align-items-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-            <span class="material-icons">date_range</span><span>Check-in / Check-out</span>
+        </li>
+        <li class="dropdown mr-lg-2 w-100 mb-4">
+          <button class="btn btn-secondary dropdown-toggle d-flex bg-light align-items-center btn-block p-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+            <span class="material-icons">date_range</span><span class="text-muted">Check-in / Check-out</span>
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <input type="date">
           </div>
-        </div>
-        <div class="dropdown d-flex mr-lg-2">
-          <button class="btn btn-secondary dropdown-toggle bg-light" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-            <span class="material-icons">person</span><span>Guests</span>
+        </li>
+        <li class="dropdown d-flex mr-lg-2 w-100 mb-4">
+          <button class="btn btn-secondary dropdown-toggle  d-flex  bg-light btn-block p-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+            <span class="material-icons">person</span><span class="text-muted">Guests</span>
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <li>
@@ -162,19 +162,21 @@ subscribe: true
               </div>
             </li>
           </ul>
-        </div>
-        <a href="search.html" type="button" class="btn btn-primary px-4 py-2 font-weight-bold">SEARCH</a>
-      </div>
+        </li>
+        <li class="w-100 mb-4 ">
+          <a href="search.html" type="button" class="btn btn-primary px-4 py-2 font-weight-bold btn-block p-3">SEARCH</a>
+        </li>
+      </ul>
   </section>
 
   <!-- Top Choices -->
-  <section class="topChoices mb-5">
+  <section class="container topChoices mb-5">
+    <h2 class="mb-4">Top Choices</h2>
     <nav>
-      <h2>Top Choices</h2>
       <div class="nav nav-tabs" id="nav-tab" role="tablist">
-        <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Bali<sup>128</sup></a>
-        <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Okinawa<sup>67</sup></a>
-        <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Taipei<sup>53</sup></a>
+        <a class="nav-link active h4" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Bali<sup>128</sup></a>
+        <a class="nav-link h4" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Okinawa<sup>67</sup></a>
+        <a class="nav-link h4" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Taipei<sup>53</sup></a>
       </div>
     </nav>
     <div class="tab-content" id="nav-tabContent">
@@ -187,13 +189,15 @@ subscribe: true
                 <img src=".\assets\images\top1.jpg" class="card-img-top top_card rounded">
                 <div class="card-body">
                   <h5 class="card-title">Hotel Aqua</h5>
-                  <i class="material-icons">star</i>
-                  <i class="material-icons">star</i>
-                  <i class="material-icons">star</i>
-                  <i class="material-icons">star</i>
-                  <i class="material-icons">star</i>
-                  <small>5.0</small><small>・2k reviews</small>
-                  <p class="card-text">TWD 2,480<small><del>TWD 3,980</del></small></p>
+                  <div class="d-flex align-items-center">
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons mr-1">star</i>
+                    <small>5.0</small><small>・2k reviews</small>
+                  </div>
+                  <p class="card-text text-muted ">TWD 2,480<small><del>TWD 3,980</del></small></p>
                 </div>
               </div>
             </div>
@@ -202,12 +206,14 @@ subscribe: true
                 <img src=".\assets\images\top2.jpg" class="card-img-top top_card rounded">
                 <div class="card-body">
                   <h5 class="card-title">Mr. Kawasaki Inn</h5>
-                  <i class="material-icons">star</i>
-                  <i class="material-icons">star</i>
-                  <i class="material-icons">star</i>
-                  <i class="material-icons">star</i>
-                  <small>4.0</small><small>・500 reviews</small>
-                  <p class="card-text">TWD 3,380</p>
+                  <div class="d-flex align-items-center">
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons mr-1">star</i>
+                    <small>4.0</small><small>・500 reviews</small>
+                  </div>
+                  <p class="card-text text-muted">TWD 3,380</p>
                 </div>
               </div>
             </div>
@@ -215,13 +221,15 @@ subscribe: true
               <div class="card border-0">
                 <img src=".\assets\images\top3.jpg" class="card-img-top top_card rounded">
                 <div class="card-body">
-                  <h5 class="card-title">Hotel Aqua</h5>
-                  <i class="material-icons">star</i>
-                  <i class="material-icons">star</i>
-                  <i class="material-icons">star</i>
-                  <i class="material-icons">star</i>
-                  <i class="material-icons">star</i>
-                  <p class="card-text">TWD 2,480</p>
+                  <h5 class="card-title">Weekly Paradise</h5>
+                  <div class="d-flex align-items-center">
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons mr-1">star</i>
+                    <small>4.0</small><small>・470 reviews</small>
+                  </div>
+                  <p class="card-text text-muted">TWD 2,480</p>
                 </div>
               </div>
             </div>
@@ -229,27 +237,15 @@ subscribe: true
               <div class="card border-0">
                 <img src=".\assets\images\top4.jpg" class="card-img-top top_card rounded">
                 <div class="card-body">
-                  <h5 class="card-title">Weekly Paradise</h5>
-                  <i class="material-icons">star</i>
-                  <i class="material-icons">star</i>
-                  <i class="material-icons">star</i>
-                  <i class="material-icons">star</i>
-                  <small>4.0</small><small>・470 reviews</small>
-                  <p class="card-text">TWD 4,780</p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card border-0">
-                <img src=".\assets\images\top1.jpg" class="card-img-top top_card rounded">
-                <div class="card-body">
-                  <h5 class="card-title">Weekly Paradise</h5>
-                  <i class="material-icons">star</i>
-                  <i class="material-icons">star</i>
-                  <i class="material-icons">star</i>
-                  <i class="material-icons">star</i>
-                  <small>4.0</small><small>・470 reviews</small>
-                  <p class="card-text">TWD 4,780</p>
+                  <h5 class="card-title">Beast Hotel</h5>
+                  <div class="d-flex align-items-center">
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons mr-1">star</i>
+                    <small>4.0</small><small>・283 reviews</small>
+                  </div>
+                  <p class="card-text text-muted">TWD 1,980</p>
                 </div>
               </div>
             </div>
@@ -268,104 +264,96 @@ subscribe: true
 
   
   <!-- Popular Destinations -->
-  <section class="mb-5">
-    <h2>Popular Destinations</h2>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6 col-md-4 mb-3">
-          <div class="text-white">
-            <img src=".\assets\images\Osaka.jpg" class="card-img pop_card bg-cover">
-            <div class="card-img-overlay">
-              <p class="card-text mb-0">JAPAN</p>
-              <h5 class="card-title">Osaka</h5>
-            </div>
+  <section class="container mb-5">
+  <h2 class="mb-4">Popular Destinations</h2>
+    <ul class="row justify-content-center flex-wrap list-unstyled">
+      <li class="col-12 col-md-6 col-lg-4 mb-3">
+        <div class="text-white">
+          <img src=".\assets\images\Osaka.jpg" class="card-img pop_card bg-cover">
+          <div class="card-img-overlay">
+            <p class="card-text mb-0">JAPAN</p>
+            <h5 class="card-title">Osaka</h5>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 ">
-          <div class="text-white">
-            <img src=".\assets\images\Kyoto.jpg" class="pop_card bg-cover">
-            <div class="card-img-overlay">
-              <p class="card-text mb-0">JAPAN</p>
-              <h5 class="card-title">Kyoto</h5>
-            </div>
+      </li>
+      <li class="col-12 col-md-6 col-lg-4 mb-3">
+        <div class="text-white">
+          <img src=".\assets\images\Kyoto.jpg" class="pop_card bg-cover">
+          <div class="card-img-overlay">
+            <p class="card-text mb-0">JAPAN</p>
+            <h5 class="card-title">Kyoto</h5>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 ">
-          <div class="text-white">
-            <img src=".\assets\images\Reykjavic.jpg" class="pop_card bg-cover">
-            <div class="card-img-overlay">
-              <p class="card-text mb-0">Iceland</p>
-              <h5 class="card-title">Reykjavík</h5>
-            </div>
+      </li>
+      <li class="col-12 col-md-6 col-lg-4 mb-3">
+        <div class="text-white">
+          <img src=".\assets\images\Reykjavic.jpg" class="pop_card bg-cover">
+          <div class="card-img-overlay">
+            <p class="card-text mb-0">Iceland</p>
+            <h5 class="card-title">Reykjavík</h5>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 ">
-          <div class="text-white">
-            <img src=".\assets\images\Paris.jpg" class="pop_card bg-cover">
-            <div class="card-img-overlay">
-              <p class="card-text mb-0">France</p>
-              <h5 class="card-title">Paris</h5>
-            </div>
+      </li>
+      <li class="col-12 col-md-6 col-lg-4 mb-3">
+        <div class="text-white">
+          <img src=".\assets\images\Paris.jpg" class="pop_card bg-cover">
+          <div class="card-img-overlay">
+            <p class="card-text mb-0">France</p>
+            <h5 class="card-title">Paris</h5>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 ">
-          <div class="text-white">
-            <img src=".\assets\images\Roman.jpg" class="pop_card bg-cover">
-            <div class="card-img-overlay">
-              <p class="card-text mb-0">Italy</p>
-              <h5 class="card-title">Roma</h5>
-            </div>
+      </li>
+      <li class="col-12 col-md-6 col-lg-4 mb-3">
+        <div class="text-white">
+          <img src=".\assets\images\Roman.jpg" class="pop_card bg-cover">
+          <div class="card-img-overlay">
+            <p class="card-text mb-0">Italy</p>
+            <h5 class="card-title">Roma</h5>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 ">
-          <div class="text-white">
-            <img src=".\assets\images\Bangkok.jpg" class="pop_card bg-cover">
-            <div class="card-img-overlay">
-                <p class="card-text mb-0">Thailand</p>
-                <h5 class="card-title">Bangkok</h5>
-              </div>
-                <span class="material-icons text-white">keyboard_arrow_down</span>
-              </div>
-            </div>
+      </li>
+      <li class="col-12 col-md-6 col-lg-4 mb-3">
+        <div class="text-white">
+          <img src=".\assets\images\Bangkok.jpg" class="pop_card bg-cover">
+          <div class="card-img-overlay">
+            <p class="card-text mb-0">Thailand</p>
+            <h5 class="card-title">Bangkok</h5>
           </div>
         </div>
-      </div>
-    </div>
+      </li>
+    </ul>
   </section>
 
 
 
   <!-- Get Inspiration -->
-  <section>
-
-    <div class="container">
-      <div class="row justify-content-between mb-5">
-        <h2>Get Inspiration</h2>
-        <button type="button" class="btn btn-light border-primary justify-content-end">see more</button>
-      </div>
+  <section class="container mb-5">
+  <section class="d-flex justify-content-between mb-4">
+    <h2>Get Inspiration</h2>
+    <button type="button" class="btn btn-light border-primary justify-content-end">see more</button>
+  </section>
     
-      <ul class="row list-unstyled">
-        <li class="col-4 card border-0 ">
-          <img src=".\assets\images\italy.jpg" class="card-img-top get_card rounded">
-          <div class="card-body">
-            <h4 class="card-title">The fifth most visited country</h4>
-            <p class="card-text">Italy is the fifth most visited country in the world, with a total of 52.3 million…</p>
-          </div>
-        </li>
-        <li class="col-4 card border-0">
-          <img src=".\assets\images\Thailand.jpg" class="card-img-top get_card rounded" >
-          <div class="card-body">
-            <h4 class="card-title">Visit Thailand for Bangkok</h4>
-            <p class="card-text">Asian tourists primarily visit Thailand for Bangkok and the historical, natural, and…</p>
-          </div>
-        </li>
-        <li class="col-4 card border-0">
-          <img src=".\assets\images\NewZealand.jpg" class="card-img-top get_card rounded">
-          <div class="card-body">
-            <h4 class="card-title">Lord of the Rings Tour</h4>
-            <p class="card-text">The national cuisine has been described as Pacific Rim, incorporating the native Māori…</p>
-          </div>
-        </li>
-      </ul>
-    </div>
+    <ul class="row list-unstyled ">
+      <li class="card border-0 col-12 col-md-4">
+        <img class="card-img-top rounded " src=".\assets\images\italy.jpg">
+        <div class="card-body">
+          <h4 class="card-title">The fifth most visited country</h4>
+          <p class="card-text">Italy is the fifth most visited country in the world, with a total of 52.3 million…</p>
+        </div>
+      </li>
+      <li class="card border-0 col-12 col-md-4">
+        <img class="card-img-top rounded " src=".\assets\images\Thailand.jpg">
+        <div class="card-body">
+          <h4 class="card-title">Visit Thailand for Bangkok</h4>
+          <p class="card-text">Asian tourists primarily visit Thailand for Bangkok and the historical, natural, and…</p>
+        </div>
+      </li>
+      <li class="card border-0 col-12 col-md-4">
+        <img class="card-img-top rounded " src=".\assets\images\NewZealand.jpg">
+        <div class="card-body">
+          <h4 class="card-title">Lord of the Rings Tour</h4>
+          <p class="card-text">The national cuisine has been described as Pacific Rim, incorporating the native Māori…</p>
+        </div>
+      </li>
+    </ul>
   </section>

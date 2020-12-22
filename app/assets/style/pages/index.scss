@@ -1,3 +1,13 @@
+@mixin pad{
+  @media(max-width:768px){
+    @content;
+  }
+}
+@mixin mobile{
+  @media(max-width:375px){
+    @content;
+  }
+}
 
 
 .bg-1{
@@ -8,8 +18,11 @@
 
 .search{
   transform: translate(8%,-50%);
-  @include iphone5{
-    height: 30; }
+  @include pad{
+    flex-direction: column;
+    margin-top: 100px;
+    transform: translate(0%,-40%); }
+  
 }
 
 .top_card{

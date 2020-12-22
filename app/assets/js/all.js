@@ -11,10 +11,13 @@ var swiper = new Swiper('.topChoices .swiper-container', {
     prevEl: '.swiper-button-prev',
   },
   breakpoints:{
-    767:{
+    0:{
+      slidesPerView: 1,
+    },
+    768:{
       slidesPerView: 2,
     },
-    1199: {
+    992: {
       slidesPerView: 3,
     },
     1200: {
