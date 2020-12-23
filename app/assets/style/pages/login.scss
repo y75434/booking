@@ -1,5 +1,18 @@
-.pic{
+.login_pic{
   height: 100%;
   background-image: url(../images/login.jpg);
     
+}
+
+h1 .logo {
+    background-image: url(../images/logo-aloha.svg);
+}
+
+h1 a {
+    width: 96px;
+    height: 24px;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
 }
