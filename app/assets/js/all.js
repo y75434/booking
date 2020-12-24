@@ -1,3 +1,6 @@
+$('input[name="daterange"]').daterangepicker();
+
+
 var swiper = new Swiper('.topChoices .swiper-container', {
   slidesPerView: 4,
   spaceBetween: 30,
@@ -25,4 +28,11 @@ var swiper = new Swiper('.topChoices .swiper-container', {
     },
   }
 });
+
+
+
+
+
+
+
 

@@ -6,15 +6,16 @@ current: search
 subscribe: false
 ---
 
+
 <!-- search -->
-<section>
-  <div class=" d-flex bg-secondary justify-content-center align-items-center p-3 rounded">
-    <div class=" col-lg-3 ">
-      <a class="btn btn-light dropdown-toggle d-flex " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-        <span class="material-icons">location_on</span><span>Destination</span>
-      </a>
-      <ul class="dropdown-menu col-lg-3" aria-labelledby="dropdownMenuButton">
-        <li>
+<section class=" ">
+  <ul class=" d-flex bg-secondary justify-content-between align-items-center p-3 rounded list-unstyled">
+    <li class="dropdown mr-lg-2 w-100 mb-4 ">
+      <button class="btn btn-light dropdown-toggle d-flex btn-block p-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+        <span class="material-icons">location_on</span><span class="text-muted">Destination</span>
+      </button>
+      <ul class="dropdown-menu flex-column flex-lg-row " aria-labelledby="dropdownMenuButton">
+        <li class="">
           <a class="dropdown-item" href="#">
             <div class="row">
               <div class="col-2">
@@ -75,18 +76,18 @@ subscribe: false
           </a>
         </li>
       </ul>
-    </div>
-    <div class=" col-lg-3 ">
-      <button class="btn btn-secondary dropdown-toggle bg-light align-items-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-        <span class="material-icons">date_range</span><span>Check-in / Check-out</span>
+    </li>
+    <li class="dropdown mr-lg-2 w-100 mb-4">
+      <button class="btn btn-secondary dropdown-toggle d-flex bg-light align-items-center btn-block p-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+        <span class="material-icons">date_range</span><span class="text-muted">Check-in / Check-out</span>
       </button>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <input type="date">
+        <input name="daterange">
       </div>
-    </div>
-    <div class=" col-lg-3">
-      <button class="btn btn-secondary dropdown-toggle bg-light " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-        <span class="material-icons">person</span><span>Guests</span>
+    </li>
+    <li class="dropdown d-flex mr-lg-2 w-100 mb-4">
+      <button class="btn btn-secondary dropdown-toggle  d-flex  bg-light btn-block p-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+        <span class="material-icons">person</span><span class="text-muted">Guests</span>
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
         <li>
@@ -126,16 +127,195 @@ subscribe: false
           </div>
         </li>
       </ul>
-    </div>
-    <a href="search.html" type="button" class="btn btn-primary px-4 py-2 font-weight-bold col-lg-2">SEARCH</a>
-  </div>
+    </li>
+    <li class="w-100 mb-4 ">
+      <a href="search.html" type="button" class="btn btn-primary px-4 py-2 font-weight-bold btn-block p-3">SEARCH</a>
+    </li>
+  </ul>
 </section>
+
+<!--  Button trigger modal --> 
+
+<h2>Bangkok<sup class="text-primary">3,240</sup></h2>
+<div class="btn-group d-md-none" role="group" >
+  <button type="button" class="btn "  data-toggle="modal" data-target="#filterModal">
+    <span class="material-icons mr-1"> filter_list </span>FILTER
+  </button>
+  <button type="button" class="close" data-toggle="modal" data-target="#closeModal" >
+    <span class="material-icons mr-1"> sort </span>SORT
+  </button>
+</div>
+
+
+<!-- filterModal -->
+<div class="modal fade" id="filterModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">
+          <span class="material-icons mr-1"> filter_list </span>FILTER
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body bg-secondary p-2">
+        <p class="font-weight-bold">Deals</p>
+        <div class="form-gruop">
+          <input type="checkbox" id="exampleCheck1">
+          <label for="exampleCheck1" class="text-muted">Free cancellation</label>
+        </div>
+        <div class="form-gruop ">
+          <input type="checkbox" id="exampleCheck2">
+          <label for="exampleCheck2" class="text-muted">No prepayment</label>
+        </div>
+        <div class="form-gruop ">
+          <input type="checkbox" id="exampleCheck3">
+          <label for="exampleCheck3" class="text-muted">Special offers</label>
+        </div>
+        <div >
+          <p class="font-weight-bold">Popular filter</p>
+          <div class="form-gruop">
+            <input type="checkbox" id="exampleCheck4">
+            <label for="exampleCheck4" class="text-muted">Breakfast included</label>
+          </div>
+          <div class="form-gruop ">
+            <input type="checkbox" id="exampleCheck5">
+            <label for="exampleCheck5" class="text-muted">Free Wi-Fi</label>
+          </div>
+          <div class="form-gruop ">
+            <input type="checkbox" id="exampleCheck6">
+            <label for="exampleCheck6" class="text-muted">Swimming pool</label>
+          </div>
+        </div>
+        <div class="mb-4">
+          <p class="font-weight-bold my-0">Budget</p>
+          <div class="line justify-content-between d-flex position-relative">
+            <div class="circle circle1"></div>
+            <div class="circle circle2"></div>
+          </div>
+          <section class="d-flex justify-content-between pt-4 align-items-center">
+            <div class="col-lg-5 box bg-light">
+              <p class="fz-12 mb-0">Min price</p>
+              <p class="fz-14 text-info">TWD 800</p>
+            </div>
+            <div class="dot">-</div>
+            <div class="col-lg-5 box bg-light ">
+              <p class="fz-12 mb-0">Max price</p>
+              <p class="fz-14 text-info ">TWD 4,000+</p>
+            </div>
+          </section>
+        </div>
+        <div class="mb-4">
+          <p class="font-weight-bold">Rating</p>
+          <div class="form-gruop d-flex">
+            <input type="checkbox" id="Rating5">
+            <label for="Rating5">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+            </label>
+            <small>5.0</small>
+            
+          </div>
+          <div class="form-gruop ">
+            <input type="checkbox" id="Rating4">
+            <label for="Rating4">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <small>4.0</small>
+            </label>
+          </div>
+          <div class="form-gruop ">
+            <input type="checkbox" id="Rating3">
+            <label for="Rating3">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <small>3.0</small>
+            </label>
+          </div>
+          <div class="form-gruop ">
+            <input type="checkbox" id="Rating2">
+            <label for="Rating2">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <small>2.0</small>
+            </label>
+          </div>
+          <div class="form-gruop ">
+            <input type="checkbox" id="Rating1">
+            <label for="Rating1">
+              <i class="material-icons">star</i>
+              <small>1.0</small>
+            </label>
+          </div>
+          <div class="form-gruop ">
+            <input type="checkbox" id="Unrated">
+            <label for="Unrated">
+              <p class="text-muted">Unrated</p>
+            </label>
+          </div>
+        </div>
+        <section>
+          <p class="font-weight-bold">Stay type</p>
+          <div class="form-gruop ">
+            <input type="checkbox" id="Hotel">
+            <label for="Hotel" class="text-muted">Hotel</label>
+          </div>
+          <div class="form-gruop ">
+            <input type="checkbox" id="Apartment">
+            <label for="Apartment" class="text-muted">Apartment</label>
+          </div>
+          <div class="form-gruop ">
+            <input type="checkbox" id="Unique">
+            <label for="Unique" class="text-muted">Unique</label>
+          </div>
+          <div class="form-gruop ">
+            <input type="checkbox" id="Hostel">
+            <label for="Hostel" class="text-muted">Hostel</label>
+          </div>
+        </section>
+      </div>
+      <div class="modal-footer bg-dark justify-content-center flex-column">
+        <h3 class="text-white">Find 1,245 results</h3>
+        <section>
+          <button type="button" class="btn btn-dark border-white" data-dismiss="modal">CLEAR</button>
+          <button type="button" class="btn btn-primary">FILTER</button>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- closeModal -->
+<div class="modal fade" id="closeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body bg-secondary p-2">
+        <ul class="list-unstyled ">
+          <li><a href="#" class="text-primary h6 pb-3">Recommended</a></li>
+          <li><a href="#" class="text-dark h6 ">Lowest Price</a></li>
+          <li><a href="#" class="text-dark h6 ">Best value</a></li>
+          <li><a href="#" class="text-dark h6 ">Distance to City Center</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 
 
 <section class="container">
   <div class="row my-3">
-    <div class="col-lg-4">
-      <h2>Bangkok3,240</h2>
+    <div class="col-lg-4 col-md-4 d-none d-md-block">
+      <h2>Bangkok<sup class="text-primary">3,240</sup></h2>
       <div class="bg-secondary p-2">
         <p class="font-weight-bold">Deals</p>
         <div class="form-gruop">
@@ -259,12 +439,12 @@ subscribe: false
         </section>
       </div>
     </div>
-    <div class="col-lg-8">
-      <ul class="list-unstyled d-flex align-items-center d-none">
-        <li><a href="#" class="text-primary h6 mr-2">Recommended</a></li>
-        <li><a href="#" class="text-dark h6 mr-2">Lowest Price</a></li>
-        <li><a href="#" class="text-dark h6 mr-2">Best value</a></li>
-        <li><a href="#" class="text-dark h6 mr-2">Distance to City Center</a></li>
+    <div class="col-lg-8 col-md-8 col-12">
+      <ul class="list-unstyled d-flex align-items-center d-sm-none d-md-flex">
+        <li><a href="#" class="text-primary p font-weight-bold pr-4">Recommended</a></li>
+        <li><a href="#" class="text-dark p font-weight-bold pr-4">Lowest Price</a></li>
+        <li><a href="#" class="text-dark p font-weight-bold pr-4">Best value</a></li>
+        <li><a href="#" class="text-dark p font-weight-bold">Distance to City Center</a></li>
       </ul>
       <div class=" border-bottom pb-3">
         <div class="row no-gutters">
@@ -321,6 +501,8 @@ subscribe: false
     </div>
   </div>
 </section>
+
+
 
 
 <div class="bg-secondary p-4">
