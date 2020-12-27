@@ -1,4 +1,4 @@
-$('input[name="daterange"]').daterangepicker();
+
 
 
 var swiper = new Swiper('.topChoices .swiper-container', {
@@ -28,6 +28,19 @@ var swiper = new Swiper('.topChoices .swiper-container', {
     },
   }
 });
+
+
+
+
+
+// cal
+
+$('input[name="daterange"]').daterangepicker();
+
+
+
+//AOS
+AOS.init();
 
 
 
