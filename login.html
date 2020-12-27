@@ -15,126 +15,55 @@
 </head>
 
 <body>
-  
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid justify-content-between align-items-center">
-      <a href="index.html"><img src="\assets\images\logo-aloha.svg" ></a>
-      <ul class="d-flex list-unstyled align-items-center">
-        <li>
-          <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-            <div class="btn-group mr-5" role="group">
-              <button id="btnGroupDrop1" type="button" class="btn btn-light border dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                <span class="material-icons">
-                  language
-                </span>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                <li ><a class="dropdown-item" href="#">English</a></li>
-                <li><a class="dropdown-item" href="#">繁體中文</a></li>
-              </ul>
-            </div>
-          </div>
-        </li>
-        <li><a href="#" class="mr-5 font-weight-bold text-dark">Sign up</a></li>
-        <li><a href="login.html" class="font-weight-bold text-dark">Login</a></li>
-      </ul>
+    
+
+<section class="container-lg position-relative m-0">
+  <div class="row justify-content-start">
+    <div class="col-lg-8 d-none d-md-block position-absolute absolute-y login_pic bg-cover vh-100">
+      <div class="d-flex flex-column h-100 ">
+        <h1><a href="index.html" class="logo">ALOHA</a></h1>
+        <div class="d-none d-lg-block mt-5">
+          <h1 class="font-weight-bold">An ideal hotel makes a <br> wonderful Trip.</h1>
+          <p class="fz-14 text-muted">Discover your dream destination and hotel on ALOHA.com</p>
+        </div>
+        <div class="d-flex justify-content-lg-start justify-content-md-center mt-auto">
+          <button type="button" class="btn btn-warning mb-5 d-flex">
+            <span class="material-icons">location_on</span>
+            <span>Osaka Castel, Japan</span>
+          </button>
+        </div>
+      </div>
     </div>
-  </nav>
-
-  
-
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 pic bg-cover ">
-        <a class="navbar-brand d-block " href="index.html"><img src="img/ic-logo-aloha.svg" alt=""></a>
-        <h1>An ideal hotel makes a wonderful Trip.</h1>
-        <p class="fz-14">Discover your dream destination and hotel on ALOHA.com</p>
-        <button type="button" class="btn btn-warning border">
-          <span class="material-icons">location_on</span>
-          Osaka Castel, Japan
-        </button>
-      </div>
-      <div class="col-lg-4">
-        <h2>Login</h2>
-        <form>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input class="form-control" type="text" id="account">
-          </div>
-          <div class="form-group">
-            <label for="passwords">Passwords</label>
-            <input class="form-control" type="text" id="account">
-          </div>
-          <p class="fz-12 text-gray">By signing in or creating an account, you agree with our <a class="fz-12 text-primary">Terms & Conditions</a> and <a class="fz-12 text-primary">Privacy Statement</a> </p>
-          <div class="form-gruop mt-4 mb-4">
-            <input type="checkbox" id="exampleCheck1">
-            <label for="exampleCheck1">Remember me</label>
-          </div>
-          <a href="#" class="btn btn-primary col-12">Login</a>
-          <p class="fz-14">Don’t have an account yet? <a class="font-weight-bold text-primary text-center">Sign up</a></p>
-        </form>
-        
-      </div>
+  </div>
+  <div class="row justify-content-lg-end justify-content-md-center pb-4" data-aos="fade-left">
+    <div class="col-lg-4 col-md-6 vh-100">
+      <form class="text-muted ">
+        <h2 class="text-dark">Login</h2>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input class="form-control" type="text" id="account">
+        </div>
+        <div class="form-group">
+          <label for="passwords">Passwords</label>
+          <input class="form-control" type="text" id="account">
+        </div>
+        <small>By signing in or creating an account, you agree with our <a class=" text-primary">Terms & Conditions</a> and <a class=" text-primary">Privacy Statement</a> </small>
+        <div class="form-gruop mt-4 mb-4">
+          <input type="checkbox" id="exampleCheck1">
+          <label for="exampleCheck1">Remember me</label>
+        </div>
+        <a href="#" class="btn btn-primary col-12">Login</a>
+        <p class="fz-14 text-center mt-2">Don’t have an account yet? <a class="font-weight-bold text-primary text-center">Sign up</a></p>
+      </form>
     </div>
   </div>
 </section>
 
-  
 
 
- 
-  
-
-  <nav class="row align-items-center navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid justify-content-between align-items-center">
-      <ul class="d-flex list-unstyled">
-        <li><p class="mr-5 text-muted">© 2020 ALOHA, Inc. All rights reserved.</p></li>
-        <li><a href="#" class="mr-4 text-muted">FAQs</a></li>
-        <li><a href="#" class="mr-4 text-muted">Terms of use</a></li>
-        <li><a href="#" class="text-muted">Privacy policy</a></li>
-     </ul>
-     <ul class="row list-unstyled">
-      <li>
-        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-          <div class="btn-group mr-5" role="group">
-            <button id="btnGroupDrop1" type="button" class="btn btn-light border dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="material-icons">
-                language
-              </span>
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-              <li ><a class="dropdown-item" href="#">繁體中文</a></li>
-              <li><a class="dropdown-item" href="#">日本語</a></li>
-            </ul>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-          <div class="btn-group mr-5" role="group">
-            <button id="btnGroupDrop1" type="button" class="d-flex btn btn-light border dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-              <span class="material-icons">attach_money</span>
-              <p>TWD</p>
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-              <li ><a class="dropdown-item" href="#">Dropdown link</a></li>
-              <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-            </ul>
-          </div>
-        </div>
-      </li>
-     </ul>
-    </div>
-  </nav>
-      
- 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="./assets/js/vendors.js"></script>
-  <script src="./assets/js/all.js"></script>
+   
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
 </body>
 
 </html>

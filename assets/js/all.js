@@ -13,15 +13,22 @@ var swiper = new Swiper('.topChoices .swiper-container', {
     prevEl: '.swiper-button-prev'
   },
   breakpoints: {
-    767: {
+    0: {
+      slidesPerView: 1
+    },
+    768: {
       slidesPerView: 2
     },
-    1199: {
+    992: {
       slidesPerView: 3
     },
     1200: {
       slidesPerView: 4
     }
   }
-});
+}); // cal
+
+$('input[name="daterange"]').daterangepicker(); //AOS
+
+AOS.init();
 //# sourceMappingURL=all.js.map
