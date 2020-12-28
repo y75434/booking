@@ -1,0 +1,53 @@
+@charset "UTF-8";
+.bg-1 {
+  background-image: url("....imagesindex-banner.jpg");
+  margin-top: 58px;
+  height: 320px; }
+
+.search {
+  -webkit-transform: translate(8%, -50%);
+      -ms-transform: translate(8%, -50%);
+          transform: translate(8%, -50%); }
+  @media (max-width: 768px) {
+    .search {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-top: 100px;
+      -webkit-transform: translate(0%, -40%);
+          -ms-transform: translate(0%, -40%);
+              transform: translate(0%, -40%); } }
+
+.top_card {
+  height: 175px;
+  width: 255px; }
+
+.choice_card {
+  border-radius: 8px;
+  width: 255px;
+  height: 175px; }
+
+.pop_card {
+  width: 350px;
+  height: 78px;
+  position: relative;
+  border-radius: 10px; }
+
+.get_card {
+  width: 350px;
+  height: 263px; }
+
+.topChoicesBtn {
+  width: 40px;
+  height: 40px;
+  color: #d1cde8; }
+
+.swiper-button-next {
+  color: #d1cde8; }
+
+.swiper-container {
+  --swiper-navigation-size: 20px;
+  /* 设置按钮大小 */ }
+
+/*# sourceMappingURL=index.css.map */
