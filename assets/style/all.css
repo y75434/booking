@@ -8396,4 +8396,8 @@ img {
   max-width: 100%;
   height: auto; }
 
+.objFit {
+  -o-object-fit: cover;
+     object-fit: cover; }
+
 /*# sourceMappingURL=all.css.map */
