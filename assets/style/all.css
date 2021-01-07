@@ -2700,7 +2700,7 @@ input[type="button"].btn-block {
 .dropdown-menu {
   position: absolute;
   top: 100%;
-  left: 0;
+  right: 0;
   z-index: 1000;
   display: none;
   float: left;
@@ -8322,6 +8322,9 @@ a.text-dark:hover, a.text-dark:focus {
   height: 78px;
   position: relative;
   border-radius: 10px; }
+  @media (max-width: 375px) {
+    .pop_card {
+      width: 100%; } }
 
 .get_card {
   width: 350px;
@@ -8340,7 +8343,7 @@ a.text-dark:hover, a.text-dark:focus {
   /* 设置按钮大小 */ }
 
 .line {
-  width: 302px;
+  max-width: 302px;
   height: 16px;
   border-bottom: 3px solid #6C51E2;
   position: relative; }
@@ -8369,9 +8372,15 @@ a.text-dark:hover, a.text-dark:focus {
 
 .bg-secondary {
   padding: 92px; }
+  @media (max-width: 375px) {
+    .bg-secondary {
+      padding: 5px; } }
 
 .fz-6 {
   font-size: 48px; }
+  @media (max-width: 375px) {
+    .fz-6 {
+      font-size: 24px; } }
 
 .bg-cover {
   background-position: center;

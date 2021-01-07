@@ -52,17 +52,17 @@
         <div class="carousel-inner ">
           <h1 class="text-white d-md-block d-none position-absolute font-weight-bold" style="z-index:2; transform: translate(80%, 300%);">Discover your ideal hotel</h1>
           <div class="carousel-item active ">
-              <div class="bg-cover w-100 position-relative  d-block justify-content-center align-items-center" style="height: 320px;">
+              <div class="w-100 d-flex justify-content-center align-items-center" style="height: 320px;">
                 <img src=".\assets\images\index-banner.jpg" class="d-block w-100"> 
               </div>
           </div>
           <div class="carousel-item">
-              <div class="bg-cover w-100 d-block d-flex justify-content-center align-items-center" style="height: 320px;">
+              <div class="w-100 d-flex justify-content-center align-items-center" style="height: 320px;">
                 <img src=".\assets\images\top1.jpg" class="d-block w-100">
               </div>
           </div>
           <div class="carousel-item">
-              <div class="bg-cover w-100 d-block d-flex justify-content-center align-items-center" style="height: 320px;">
+              <div class="w-100  d-flex justify-content-center align-items-center" style="height: 320px;">
                 <img src=".\assets\images\top2.jpg" class="d-block w-100">
               </div>
           </div>
@@ -219,11 +219,17 @@
   <section class="container topChoices mb-5" data-aos="fade-up">
     <h2 class="mb-4">Top Choices</h2>
     <nav>
-      <div class="nav nav-tabs" id="nav-tab" role="tablist">
-        <a class="nav-link active h4" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Bali<sup>128</sup></a>
-        <a class="nav-link h4" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Okinawa<sup>67</sup></a>
-        <a class="nav-link h4" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Taipei<sup>53</sup></a>
-      </div>
+      <ul class="nav nav-tabs" id="nav-tab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active h4" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Bali<sup>128</sup></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link h4" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Okinawa<sup>67</sup></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link h4" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Taipei<sup>53</sup></a>
+        </li>
+      </ul>
     </nav>
     <div class="tab-content" id="nav-tabContent">
       <div class="tab-pane fade show active d-flex" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
@@ -410,54 +416,57 @@
 
 
  
-   <div class="bg-secondary">
-  <div class="container">
-    <div class="row justify-content-center" data-aos="fade-left">
-      <p class=" fz-6 font-weight-bold col-12 text-center">Subscribe for Exclusive Offer</p>
+   <div class="bg-secondary m-sm-0">
+  <div class="container ">
+    <form class="row justify-content-center" data-aos="fade-left">
+      <label class=" fz-6 font-weight-bold col-12 text-center">Subscribe for Exclusive Offer</label>
       <div class="input-group col-lg-6 col-12 mb-3 input-group-lg justify-content-center ">
         <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Your email address" aria-describedby="inputGroup-sizing-lg">
         <button class="btn btn-primary" type="button" id="button-addon2">SUBSCRIBE</button>
       </div>
-    </div>
+    </form>
   </div>
 </div> 
-
-  <nav class="row align-items-center navbar navbar-expand-lg navbar-light bg-light justify-content-between">
-    <div class="container-fluid justify-content-between align-items-center">
-      <p class="mr-5 text-muted ">© 2020 ALOHA, Inc. All rights reserved.</p>
-      <ul class="d-flex list-unstyled align-items-center">
-        <li><a href="#" class="mr-4 text-muted">FAQs</a></li>
-        <li><a href="#" class="mr-4 text-muted">Terms of use</a></li>
-        <li><a href="#" class="text-muted">Privacy policy</a></li>
+  <footer class="justify-content-center justify-content-md-between">
+    <div class=" align-items-center navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+      <div class="container-fluid justify-content-between align-items-center">
+        <p class=" text-muted ">© 2020 ALOHA, Inc. All rights reserved.</p>
+        <ul class="d-flex list-unstyled align-items-center">
+          <li><a href="#" class="mr-4 text-muted">FAQs</a></li>
+          <li><a href="#" class="mr-4 text-muted">Terms of use</a></li>
+          <li><a href="#" class="text-muted">Privacy policy</a></li>
+        </ul>
+      <ul class="row list-unstyled d-lg-block d-none">
+        <li class="btn-group" role="group" aria-label="Button group with nested dropdown">
+          <div class="btn-group mr-5" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-light border dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+              <span class="material-icons">
+                language
+              </span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <li><a class="dropdown-item" href="#">繁體中文</a></li>
+              <li><a class="dropdown-item" href="#">日本語</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="btn-group " role="group" aria-label="Button group with nested dropdown">
+          <div class="btn-group mr-5" role="group">
+            <ul class="dropdown-menu" aria-labelledby="btnGroupDrop2">
+              <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+              <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+            </ul>
+            <button id="btnGroupDrop2" type="button" class="d-flex btn btn-light border dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+              <span class="material-icons">attach_money</span>TWD
+            </button>
+            
+          </div>
+        </li>
       </ul>
-    <ul class="row list-unstyled d-lg-block d-none">
-      <li class="btn-group" role="group" aria-label="Button group with nested dropdown">
-        <div class="btn-group mr-5" role="group">
-          <button id="btnGroupDrop1" type="button" class="btn btn-light border dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            <span class="material-icons">
-              language
-            </span>
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-            <li><a class="dropdown-item" href="#">繁體中文</a></li>
-            <li><a class="dropdown-item" href="#">日本語</a></li>
-          </ul>
-        </div>
-      </li>
-      <li class="btn-group " role="group" aria-label="Button group with nested dropdown">
-        <div class="btn-group mr-5" role="group">
-          <button id="btnGroupDrop1" type="button" class="d-flex btn btn-light border dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-            <span class="material-icons">attach_money</span>TWD
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-            <li ><a class="dropdown-item" href="#">Dropdown link</a></li>
-            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-          </ul>
-        </div>
-      </li>
-    </ul>
+      </div>
     </div>
-  </nav>
+  </footer>
+    
       
  
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

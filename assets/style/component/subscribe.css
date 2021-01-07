@@ -1,7 +1,13 @@
 .bg-secondary {
   padding: 92px; }
+  @media (max-width: 375px) {
+    .bg-secondary {
+      padding: 5px; } }
 
 .fz-6 {
   font-size: 48px; }
+  @media (max-width: 375px) {
+    .fz-6 {
+      font-size: 24px; } }
 
 /*# sourceMappingURL=subscribe.css.map */
