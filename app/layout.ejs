@@ -53,43 +53,46 @@
 
  
   <% if (subscribe) { %> <%- include('subscribe.ejs'); %> <% } %>
-
-  <nav class="row align-items-center navbar navbar-expand-lg navbar-light bg-light justify-content-between">
-    <div class="container-fluid justify-content-between align-items-center">
-      <p class="mr-5 text-muted ">© 2020 ALOHA, Inc. All rights reserved.</p>
-      <ul class="d-flex list-unstyled align-items-center">
-        <li><a href="#" class="mr-4 text-muted">FAQs</a></li>
-        <li><a href="#" class="mr-4 text-muted">Terms of use</a></li>
-        <li><a href="#" class="text-muted">Privacy policy</a></li>
+  <footer class="justify-content-center justify-content-md-between">
+    <div class=" align-items-center navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+      <div class="container-fluid justify-content-between align-items-center">
+        <p class=" text-muted ">© 2020 ALOHA, Inc. All rights reserved.</p>
+        <ul class="d-flex list-unstyled align-items-center">
+          <li><a href="#" class="mr-4 text-muted">FAQs</a></li>
+          <li><a href="#" class="mr-4 text-muted">Terms of use</a></li>
+          <li><a href="#" class="text-muted">Privacy policy</a></li>
+        </ul>
+      <ul class="row list-unstyled d-lg-block d-none">
+        <li class="btn-group" role="group" aria-label="Button group with nested dropdown">
+          <div class="btn-group mr-5" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-light border dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+              <span class="material-icons">
+                language
+              </span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <li><a class="dropdown-item" href="#">繁體中文</a></li>
+              <li><a class="dropdown-item" href="#">日本語</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="btn-group " role="group" aria-label="Button group with nested dropdown">
+          <div class="btn-group mr-5" role="group">
+            <ul class="dropdown-menu" aria-labelledby="btnGroupDrop2">
+              <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+              <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+            </ul>
+            <button id="btnGroupDrop2" type="button" class="d-flex btn btn-light border dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+              <span class="material-icons">attach_money</span>TWD
+            </button>
+            
+          </div>
+        </li>
       </ul>
-    <ul class="row list-unstyled d-lg-block d-none">
-      <li class="btn-group" role="group" aria-label="Button group with nested dropdown">
-        <div class="btn-group mr-5" role="group">
-          <button id="btnGroupDrop1" type="button" class="btn btn-light border dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            <span class="material-icons">
-              language
-            </span>
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-            <li><a class="dropdown-item" href="#">繁體中文</a></li>
-            <li><a class="dropdown-item" href="#">日本語</a></li>
-          </ul>
-        </div>
-      </li>
-      <li class="btn-group " role="group" aria-label="Button group with nested dropdown">
-        <div class="btn-group mr-5" role="group">
-          <button id="btnGroupDrop1" type="button" class="d-flex btn btn-light border dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-            <span class="material-icons">attach_money</span>TWD
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-            <li ><a class="dropdown-item" href="#">Dropdown link</a></li>
-            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-          </ul>
-        </div>
-      </li>
-    </ul>
+      </div>
     </div>
-  </nav>
+  </footer>
+    
       
  
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

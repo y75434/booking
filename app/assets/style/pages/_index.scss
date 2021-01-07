@@ -41,6 +41,9 @@
   height: 78px;
   position: relative;
   border-radius: 10px;
+  @include mobile{
+    width: 100%;
+  }
 }
 
 .get_card{
